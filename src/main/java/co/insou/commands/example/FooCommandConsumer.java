@@ -1,18 +1,14 @@
 package co.insou.commands.example;
 
 import co.insou.commands.CommandConsumer;
-import co.insou.commands.Commands;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
 public class FooCommandConsumer extends CommandConsumer {
 
-    private final Commands plugin;
-
-    public FooCommandConsumer(Commands plugin) {
+    public FooCommandConsumer() {
         super("foo", true);
-        this.plugin = plugin;
-        super.addSubCommand(new BarSubCommand(plugin)).addSubCommand(new BazSubCommand(plugin));
+        super.addSubCommand(new BarSubCommand()).addSubCommand(new BazSubCommand());
     }
 
     @Override

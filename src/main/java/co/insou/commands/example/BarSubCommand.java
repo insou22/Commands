@@ -1,17 +1,13 @@
 package co.insou.commands.example;
 
-import co.insou.commands.Commands;
 import co.insou.commands.SubCommand;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
 public class BarSubCommand extends SubCommand {
 
-    private final Commands plugin;
-
-    public BarSubCommand(Commands plugin) {
+    public BarSubCommand() {
         super("bar");
-        this.plugin = plugin;
         super.addAlias("barr").addAlias("barrr");
     }
 

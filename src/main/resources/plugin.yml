@@ -1,7 +1,0 @@
-name: Commands
-version: 1.0-SNAPSHOT
-main: co.insou.commands.Commands
-author: insou
-
-commands:
-  foo:
